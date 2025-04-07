@@ -1,0 +1,135 @@
+---
+layout: default
+title: "Rein Otsasoni Fond | Rein Otsason Foundation"
+---
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Rein Otsasoni Fond</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/contents/reinotsason.jpg" alt="Rein Otsason" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <p class="lead">
+          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on toetada Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid.
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <i class="fas fa-graduation-cap fa-lg text-primary"></i>
+            <strong class="ml-2">Stipendiumifond:</strong> Sihtasutuse poolt väljaantavad stipendiumid on ette nähtud magistri- või doktoriõppes rahanduse või majandusega seotud erialadel õppivatele üliõpilastele.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rein Otsason Section -->
+<section id="rein-otsason" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Rein Otsason</h2>
+        <p>
+          Rein Otsason (24. mai 1931 Tartu – 30. oktoober 2004 Tallinn) oli Eesti majandusteadlane ja pankur, üks 1992. aasta rahareformi peamisi ettevalmistajaid. Ta oli Eesti Vabariigi taasiseseisvumise järgse Eesti Panga esimene president ning Eesti Krediidipanga (tänane Coop Pank) asutaja ja president.
+        </p>
+        <p>
+          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on hoida Rein Otsasoni mälestust arendades heategevust ning toetades Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid. Fond asutati Eesti Krediidipanga ning Rein Otsasoni perekonna ja kolleegide poolt.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/contents/reinotsason_sh2.jpg" alt="Rein Otsason" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toeta Section -->
+<section id="toeta" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Toeta</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="lead">
+          Rein Otsasoni Fond annab igal aastal välja kuni kolm stipendiumi Eesti noortele silmapaistvatele majandusüliõpilastele. Fondi tegevust on võimalik rahaliselt toetada.
+        </p>
+        <p>Pangarekvisiidid:</p>
+        <ul>
+          <li>SA Rein Otsasoni Fond</li>
+          <li>Narva mnt 4, Tallinn, Estonia</li>
+          <li>Reg nr: 90010344</li>
+          <li>Pangakonto: <strong>EE344204278605122302</strong> (Coop Pank AS)</li>
+          <li>BIC: EKRDEE22</li>
+        </ul>
+        <p>
+          SA Rein Otsasoni Fond kuulub tulumaksusoodustusega ühingute nimekirja alates 1.01.2012. Eesti residendist annetajatel on võimalik vastavalt seadusele annetatud summalt tulumaks tagasi saada. Selleks palume lisada ülekande selgitusse annetaja isikukood.
+        </p>
+        <div class="text-center mt-4">
+          <img src="images/logos/440px-Coop_Pank_logo.jpg" alt="Coop Pank" class="img-fluid" style="max-width:150px;">
+        </div>
+        <p class="text-center mt-3">Aitäh!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stipendiaadid Section -->
+<section id="stipendiaadid" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Stipendiaadid</h2>
+    <div class="row">
+      {% for scholar in site.scholars %}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-header text-center">
+            <h4 class="mb-0">{{ scholar.year }}</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              {% for winner in scholar.winners %}
+              <li>
+                {% if winner.link != "" %}
+                  <a href="{{ winner.link }}" target="_blank">{{ winner.name }}</a>
+                {% else %}
+                  {{ winner.name }}
+                {% endif %}
+                {% if winner.affiliation != "" %}
+                  ({{ winner.affiliation }})
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt Section -->
+<section id="kontakt" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Kontaktid</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <address>
+          <strong>SA Rein Otsasoni Fond</strong><br>
+          Narva mnt 4<br>
+          Tallinn, Estonia<br>
+          <i class="fas fa-at"></i> <a href="mailto:info@otsason.org">info@otsason.org</a><br>
+          <i class="fas fa-phone"></i> +372 5096926
+        </address>
+      </div>
+      <div class="col-md-6">
+        <address>
+          <i class="fas fa-building"></i> Reg nr: 90010344<br>
+          <i class="fas fa-euro-sign"></i> IBAN: EE344204278605122302<br>
+          <i class="fas fa-university"></i> BIC: EKRDEE22
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
