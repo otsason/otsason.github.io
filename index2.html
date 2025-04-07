@@ -3,22 +3,30 @@ layout: default
 title: "Rein Otsasoni Fond | Rein Otsason Foundation"
 ---
 
+<!-- Hero/Intro Section -->
+<section id="hero" class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4">Rein Otsasoni Fond</h1>
+    <p class="lead">Toetame Eesti üliõpilaste ja noorteadlaste õpinguid ning teadusuuringuid alates 2006.</p>
+  </div>
+</section>
+
 <!-- About Section -->
 <section id="about" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Rein Otsasoni Fond</h2>
+    <h2 class="text-center mb-4">Fond</h2>
     <div class="row align-items-center">
       <div class="col-md-6">
         <img src="images/contents/reinotsason.jpg" alt="Rein Otsason" class="img-fluid rounded">
       </div>
       <div class="col-md-6">
         <p class="lead">
-          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on toetada Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid.
+          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on toetada Eesti üliõpilaste ja noorteadlaste õpinguid ning teadusuuringuid.
         </p>
         <ul class="list-unstyled">
           <li class="mb-3">
             <i class="fas fa-graduation-cap fa-lg text-primary"></i>
-            <strong class="ml-2">Stipendiumifond:</strong> Sihtasutuse poolt väljaantavad stipendiumid on ette nähtud magistri- või doktoriõppes rahanduse või majandusega seotud erialadel õppivatele üliõpilastele.
+            <strong class="ml-2">Stipendiumifond:</strong> Stipendiumid on mõeldud magistri- või doktoriõppes rahanduse või majandusega seotud erialade õppijatele.
           </li>
         </ul>
       </div>
@@ -26,21 +34,54 @@ title: "Rein Otsasoni Fond | Rein Otsason Foundation"
   </div>
 </section>
 
+<!-- Competition Section (Displayed only if competition_active is true) -->
+{% if site.competition_active %}
+<section id="konkurss" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Stipendiumikonkurss 2024</h2>
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+         <p class="lead">
+           Rein Otsasoni Fond kuulutab välja konkursi kuni kolme 2000 euro suuruse stipendiumi väljaandmiseks.
+         </p>
+         <p>
+           Kandideerida saavad Eesti või välismaised üliõpilased, kes õpivad magistri- või doktoriõppes rahanduse (kaasa arvatud finantstehnoloogia) või majanduse erialal ning tegelevad teadustööga.
+         </p>
+         <p>
+           Taotlemiseks palume <strong>15. maiks 2024</strong> täita <a href="https://forms.gle/RCwBPHhFW1EzPCzx8" target="_blank" class="text-light">taotlusvormi</a> ning üles laadida:
+         </p>
+         <ul>
+           <li>soovituskirjad (töö juhendajalt ja vähemalt ühelt doktorikraadi omavalt õppejõult/teadlaselt);</li>
+           <li>õppeasutuse kinnitus õpingute seisu kohta (õpingutulemuste väljatrükk);</li>
+           <li>koopia senist haridustaset tõendavast dokumendist (diplomi koopia).</li>
+         </ul>
+         <p>
+           Üleslaetavad dokumendid peavad olema doc, docx, rtf, pdf, bdoc või asice vormingus, originaaldokumendid skaneeritult, eesti või inglise keeles.
+         </p>
+         <p>
+           Stipendiumid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail 2024.
+         </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <!-- Rein Otsason Section -->
 <section id="rein-otsason" class="py-5 bg-light">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-md-6 order-md-2">
+        <img src="images/contents/reinotsason_sh2.jpg" alt="Rein Otsason" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 order-md-1">
         <h2>Rein Otsason</h2>
         <p>
-          Rein Otsason (24. mai 1931 Tartu – 30. oktoober 2004 Tallinn) oli Eesti majandusteadlane ja pankur, üks 1992. aasta rahareformi peamisi ettevalmistajaid. Ta oli Eesti Vabariigi taasiseseisvumise järgse Eesti Panga esimene president ning Eesti Krediidipanga (tänane Coop Pank) asutaja ja president.
+          Rein Otsason (24. mai 1931 – 30. oktoober 2004) oli Eesti majandusteadlane ja pankur, rahareformi võtmefiguur ning esimene Eesti Panga president. Ta asutas ka Eesti Krediidipanga (tänane Coop Pank).
         </p>
         <p>
-          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on hoida Rein Otsasoni mälestust arendades heategevust ning toetades Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid. Fond asutati Eesti Krediidipanga ning Rein Otsasoni perekonna ja kolleegide poolt.
+          Fond asutati 24. mail 2006, et hoida tema mälestust ning toetada tuleviku teadlasi ja üliõpilasi.
         </p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/contents/reinotsason_sh2.jpg" alt="Rein Otsason" class="img-fluid rounded">
       </div>
     </div>
   </div>
@@ -64,7 +105,7 @@ title: "Rein Otsasoni Fond | Rein Otsason Foundation"
           <li>BIC: EKRDEE22</li>
         </ul>
         <p>
-          SA Rein Otsasoni Fond kuulub tulumaksusoodustusega ühingute nimekirja alates 1.01.2012. Eesti residendist annetajatel on võimalik vastavalt seadusele annetatud summalt tulumaks tagasi saada. Selleks palume lisada ülekande selgitusse annetaja isikukood.
+          SA Rein Otsasoni Fond on tulumaksusoodustusega ühing, võimaldades annetajatel saada tagasi osa makstud tulumaksust, märkides ülekande selgitusse oma isikukoodi.
         </p>
         <div class="text-center mt-4">
           <img src="images/logos/440px-Coop_Pank_logo.jpg" alt="Coop Pank" class="img-fluid" style="max-width:150px;">
@@ -112,24 +153,3 @@ title: "Rein Otsasoni Fond | Rein Otsason Foundation"
 <!-- Kontakt Section -->
 <section id="kontakt" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Kontaktid</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <address>
-          <strong>SA Rein Otsasoni Fond</strong><br>
-          Narva mnt 4<br>
-          Tallinn, Estonia<br>
-          <i class="fas fa-at"></i> <a href="mailto:info@otsason.org">info@otsason.org</a><br>
-          <i class="fas fa-phone"></i> +372 5096926
-        </address>
-      </div>
-      <div class="col-md-6">
-        <address>
-          <i class="fas fa-building"></i> Reg nr: 90010344<br>
-          <i class="fas fa-euro-sign"></i> IBAN: EE344204278605122302<br>
-          <i class="fas fa-university"></i> BIC: EKRDEE22
-        </address>
-      </div>
-    </div>
-  </div>
-</section>
