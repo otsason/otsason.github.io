@@ -1,5 +1,8 @@
 title: "Rein Otsasoni Fond | Rein Otsason Foundation"
 competition_active: true  # Toggle this true when the competition is live
+competition_deadline: "15. maiks"
+competition_prize: "kuni kahe 3000 euro suuruse stipendiumi"
+competition_form: "https://forms.gle/RCwBPHhFW1EzPCzx8"
 scholars:
   - year: 2007
     winners:
