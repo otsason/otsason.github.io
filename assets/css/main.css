@@ -1,0 +1,52 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  margin-bottom: 80px;
+}
+
+.site-header .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Sections */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Cards for Scholarship Winners */
+.card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.card-header {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  font-size: 0.9rem;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
