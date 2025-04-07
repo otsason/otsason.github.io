@@ -10,6 +10,8 @@
 <html lang="et"> <!--<![endif]-->
 
 	<head>
+        
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
@@ -22,10 +24,10 @@
 		<link rel="icon" href="images/favicons/favicon.ico">
 		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
 
-        	<!-- OG -->
-        	<meta property="og:site_name" content="Rein Otsasoni Fond" />
-        	<meta property="og:type" content="website" />
-        	<meta property="og:image" content="http://otsason.org/images/contents/reinotsason_sh.jpg" />
+        <!-- OG -->
+        <meta property="og:site_name" content="Rein Otsasoni Fond" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://otsason.org/images/contents/reinotsason_sh.jpg" />
         
 		<!-- CSS
 		================================= -->
@@ -63,13 +65,17 @@
 	</head>
 
 	<body class="enable-animations">
+
 		<div id="document" class="document">
 
 			<!-- HEADER
 			================================= -->
 			<header id="header" class="header-section section section-dark navbar navbar-default navbar-fixed-top">
+
 				<div class="container-fluid">
+
 					<div class="navbar-header navbar-left">
+
 						<!-- RESPONSIVE MENU BUTTON -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
@@ -82,30 +88,30 @@
 						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
 							<img src="images/logos/white-header-logo.png" srcset="images/logos/white-header-logo@2x.png 2x" alt="Rein Otsasoni Fond">
 						</a> -->
+
 					</div>
 
 					<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
 						
 						<!-- NAVIGATION LINKS -->
 						<ul id="header-nav" class="nav navbar-nav">
+							
 							<li><a href="#hero" class="hidden">Top</a></li>
+
 							<li><a href="#about">Fond</a></li>
-              						{% if site.competition_active %}
-								<li><a href="#konkurss">Stipendium {{ site.time | date: "%Y" }}</a></li>
-              						{% endif %}
+              {% if site.competition_active %}
+							  <li><a href="#konkurss">Stipendium 2024</a></li>
+              {% endif %}
 							<li><a href="#rein-otsason">Rein Otsason</a></li>
-              						{% unless site.competition_active %}
-								<li><a href="#toeta">Toeta</a></li>
-              						{% endunless %}
+							<!-- ###kommenteeri järgmine rida välja kui konkurssi ei käi -->
+							<!-- <li><a href="#toeta">Toeta</a></li> -->
                             				<li><a href="#stipendiaadid">Stipendiaadid</a></li>
 							<li><a href="#kontakt">Kontakt</a></li>
 							
 							<!-- HEADER ACTION BUTTON -->
-              						{% if site.competition_active %}
-								<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>
-              						{% elsif %}
-								<li class="header-action-button"><a href="#toeta" class="btn btn-primary">Toeta!</a></li>
-              						{% endif %}
+							<!-- ###vaheta need -->
+							<!--<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>-->
+                            				<li class="header-action-button"><a href="#toeta" class="btn btn-primary">Toeta!</a></li>
 
 						</ul>
 
@@ -157,25 +163,24 @@
 
 			<!-- ###kommenteeri välja/sisse kogu sektsioon -->
 			<!-- KONKURSS
-			================================= -->
-              		{% if site.competition_active %}
+			================================= 
 			<section id="konkurss" class="headline-section section-dark section">
 
 				<div class="container">
 
-					<h2 class="section-heading text-center">Stipendiumikonkurss {{ site.time | date: "%Y" }}</h2>
+					<h2 class="section-heading text-center">Stipendiumikonkurss 2024</h2>
 
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
 
 							<p class="lead">
-Rein Otsasoni Fond kuulutab välja konkursi {{ site.competition_prize }} väljaandmiseks.</p>
+Rein Otsasoni Fond kuulutab välja konkursi kuni kolme 2000 euro suuruse stipendiumi väljaandmiseks.</p>
 
                             <p>
 Stipendiumile saavad kandideerida Eestis või välismaal tegutsevates kõrgkoolides magistri- või doktoriõppes rahanduse (k.a. finantstehnoloogia) või majanduse erialal õppivad ja teadustööd tegevad Eesti Vabariigi kodanikud.</p>
 
                             <p>
-Taotlemiseks palume <strong>{{ site.competition_deadline }} {{ site.time | date: "%Y" }}</strong> täita <a href="{{ site.competition_form }}" target="_blank">taotlusvorm</a> ning laadida üles:
+Taotlemiseks palume <strong>15. maiks 2024</strong> täita <a href="https://forms.gle/RCwBPHhFW1EzPCzx8" target="_blank">taotlusvorm</a> ning laadida üles:
 <ul class="nice-list">
     <li>soovituskirjad (töö juhendajalt ja vähemalt ühelt doktorikraadi omavalt õppejõult/teadlaselt);</li>
     <li>õppeasutuse kinnitus õpingute seisu kohta (õpingutulemuste väljatrükk);</li>
@@ -187,7 +192,7 @@ Taotlemiseks palume <strong>{{ site.competition_deadline }} {{ site.time | date:
 							</p>
 
                             <p>
-Stipendiaadid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail {{ site.time | date: "%Y" }}.
+Stipendiaadid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail 2024.
 							</p>
 
 						</div>
@@ -196,8 +201,7 @@ Stipendiaadid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail {{ 
                     
 				</div>
 
-			</section>
-              		{% endif %}
+			</section>-->
 
 
             
@@ -603,6 +607,7 @@ SA Rein Otsasoni Fond kuulub tulumaksusoodustusega ühingute nimekirja alates 1.
 									<address class="col-sm-6">
 										<strong>SA Rein Otsasoni Fond</strong>
 										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-building"></i>Narva mnt 4<br>Tallinn, Estonia</li>
 											<li><i class="fa-li fa fa-at"></i>E-mail: <a href="mailto:info@otsason.org" target="_blank">info@otsason.org</a></li>
 											<li><i class="fa-li fa fa-phone"></i>Telefon: +372 5096926</li>
 										</ul>										
