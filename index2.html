@@ -55,3 +55,48 @@ title: "Rein Otsasoni Fond"
       <h2>Stipendiaadid</h2>
       {% for scholar in site.scholars reversed %}
       <div class="year">
+        <h3>{{ scholar.year }}</h3>
+        <ul>
+          {% for winner in scholar.winners %}
+          <li>
+            {% if winner.link %}
+              <a href="{{ winner.link }}" target="_blank">{{ winner.name }}</a>
+            {% else %}
+              {{ winner.name }}
+            {% endif %}
+            <span>{{ winner.affiliation }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section id="toeta">
+      <h2>Toeta fondi</h2>
+      <p>Toeta Eesti noori majandustalente annetusega:</p>
+      <p class="bank-details">
+        <strong>SA Rein Otsasoni Fond</strong><br>
+        IBAN: <strong>EE344204278605122302</strong><br>
+        Coop Pank, BIC: EKRDEE22<br>
+        Märgi selgitusse isikukood, et saada tulumaksutagastus.
+      </p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Narva mnt 4, Tallinn<br>
+      Email: <a href="mailto:info@otsason.org">info@otsason.org</a><br>
+      Telefon: +372 5096926</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 SA Rein Otsasoni Fond
+    </div>
+  </footer>
+
+</body>
+</html>
