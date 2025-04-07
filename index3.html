@@ -112,9 +112,11 @@
 							
 							<!-- HEADER ACTION BUTTON -->
 							<!-- ###vaheta need -->
-							<!--<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>-->
+              {% if site.competition_active %}
+							<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>
+              {% elsif %}
                             				<li class="header-action-button"><a href="#toeta" class="btn btn-primary">Toeta!</a></li>
-
+              {% endif %}
 						</ul>
 
 					</nav>
