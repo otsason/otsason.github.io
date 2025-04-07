@@ -104,7 +104,9 @@
               {% endif %}
 							<li><a href="#rein-otsason">Rein Otsason</a></li>
 							<!-- ###kommenteeri järgmine rida välja kui konkurssi ei käi -->
-							<!-- <li><a href="#toeta">Toeta</a></li> -->
+              {% unless site.competition_active %}
+							<li><a href="#toeta">Toeta</a></li>
+              {% endunless %}
                             				<li><a href="#stipendiaadid">Stipendiaadid</a></li>
 							<li><a href="#kontakt">Kontakt</a></li>
 							
