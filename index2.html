@@ -1,155 +1,57 @@
 ---
 layout: default
-title: "Rein Otsasoni Fond | Rein Otsason Foundation"
+title: "Rein Otsasoni Fond"
 ---
 
-<!-- Hero/Intro Section -->
-<section id="hero" class="py-5 text-center bg-light">
-  <div class="container">
-    <h1 class="display-4">Rein Otsasoni Fond</h1>
-    <p class="lead">Toetame Eesti üliõpilaste ja noorteadlaste õpinguid ning teadusuuringuid alates 2006.</p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rein Otsasoni Fond</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-<!-- About Section -->
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Fond</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="images/contents/reinotsason.jpg" alt="Rein Otsason" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6">
-        <p class="lead">
-          Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on toetada Eesti üliõpilaste ja noorteadlaste õpinguid ning teadusuuringuid.
-        </p>
-        <ul class="list-unstyled">
-          <li class="mb-3">
-            <i class="fas fa-graduation-cap fa-lg text-primary"></i>
-            <strong class="ml-2">Stipendiumifond:</strong> Stipendiumid on mõeldud magistri- või doktoriõppes rahanduse või majandusega seotud erialade õppijatele.
-          </li>
-        </ul>
-      </div>
+  <header>
+    <div class="container">
+      <h1>Rein Otsasoni Fond</h1>
+      <nav>
+        <a href="#about">Fondist</a>
+        {% if site.competition_active %}
+          <a href="#konkurss">Stipendium</a>
+        {% endif %}
+        <a href="#rein-otsason">Rein Otsason</a>
+        <a href="#stipendiaadid">Stipendiaadid</a>
+        <a href="#toeta">Toeta</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- Competition Section (Displayed only if competition_active is true) -->
-{% if site.competition_active %}
-<section id="konkurss" class="py-5 bg-dark text-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Stipendiumikonkurss 2024</h2>
-    <div class="row">
-      <div class="col-md-10 offset-md-1">
-         <p class="lead">
-           Rein Otsasoni Fond kuulutab välja konkursi kuni kolme 2000 euro suuruse stipendiumi väljaandmiseks.
-         </p>
-         <p>
-           Kandideerida saavad Eesti või välismaised üliõpilased, kes õpivad magistri- või doktoriõppes rahanduse (kaasa arvatud finantstehnoloogia) või majanduse erialal ning tegelevad teadustööga.
-         </p>
-         <p>
-           Taotlemiseks palume <strong>15. maiks 2024</strong> täita <a href="https://forms.gle/RCwBPHhFW1EzPCzx8" target="_blank" class="text-light">taotlusvormi</a> ning üles laadida:
-         </p>
-         <ul>
-           <li>soovituskirjad (töö juhendajalt ja vähemalt ühelt doktorikraadi omavalt õppejõult/teadlaselt);</li>
-           <li>õppeasutuse kinnitus õpingute seisu kohta (õpingutulemuste väljatrükk);</li>
-           <li>koopia senist haridustaset tõendavast dokumendist (diplomi koopia).</li>
-         </ul>
-         <p>
-           Üleslaetavad dokumendid peavad olema doc, docx, rtf, pdf, bdoc või asice vormingus, originaaldokumendid skaneeritult, eesti või inglise keeles.
-         </p>
-         <p>
-           Stipendiumid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail 2024.
-         </p>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+  <main class="container">
 
-<!-- Rein Otsason Section -->
-<section id="rein-otsason" class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-md-2">
-        <img src="images/contents/reinotsason_sh2.jpg" alt="Rein Otsason" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6 order-md-1">
-        <h2>Rein Otsason</h2>
-        <p>
-          Rein Otsason (24. mai 1931 – 30. oktoober 2004) oli Eesti majandusteadlane ja pankur, rahareformi võtmefiguur ning esimene Eesti Panga president. Ta asutas ka Eesti Krediidipanga (tänane Coop Pank).
-        </p>
-        <p>
-          Fond asutati 24. mail 2006, et hoida tema mälestust ning toetada tuleviku teadlasi ja üliõpilasi.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="about">
+      <h2>Fondist</h2>
+      <p>Rein Otsasoni Fond on asutatud 24. mail 2006 eesmärgiga toetada Eesti üliõpilaste ja noorteadlaste õpinguid rahanduse ja majanduse valdkonnas.</p>
+    </section>
 
-<!-- Toeta Section -->
-<section id="toeta" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Toeta</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <p class="lead">
-          Rein Otsasoni Fond annab igal aastal välja kuni kolm stipendiumi Eesti noortele silmapaistvatele majandusüliõpilastele. Fondi tegevust on võimalik rahaliselt toetada.
-        </p>
-        <p>Pangarekvisiidid:</p>
-        <ul>
-          <li>SA Rein Otsasoni Fond</li>
-          <li>Narva mnt 4, Tallinn, Estonia</li>
-          <li>Reg nr: 90010344</li>
-          <li>Pangakonto: <strong>EE344204278605122302</strong> (Coop Pank AS)</li>
-          <li>BIC: EKRDEE22</li>
-        </ul>
-        <p>
-          SA Rein Otsasoni Fond on tulumaksusoodustusega ühing, võimaldades annetajatel saada tagasi osa makstud tulumaksust, märkides ülekande selgitusse oma isikukoodi.
-        </p>
-        <div class="text-center mt-4">
-          <img src="images/logos/440px-Coop_Pank_logo.jpg" alt="Coop Pank" class="img-fluid" style="max-width:150px;">
-        </div>
-        <p class="text-center mt-3">Aitäh!</p>
-      </div>
-    </div>
-  </div>
-</section>
+    {% if site.competition_active %}
+    <section id="konkurss" class="highlight">
+      <h2>Stipendiumikonkurss 2025</h2>
+      <p>Fond kuulutab välja konkursi kuni kolme 2000-eurose stipendiumi väljaandmiseks magistri- ja doktorantidele rahanduse või majanduse erialal.</p>
+      <a class="btn" href="https://forms.gle/RCwBPHhFW1EzPCzx8">Kandideeri siin</a>
+      <p class="small">Tähtaeg: 15. mai 2025 | Stipendiaadid kuulutatakse välja 24. mail 2025.</p>
+    </section>
+    {% endif %}
 
-<!-- Stipendiaadid Section -->
-<section id="stipendiaadid" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Stipendiaadid</h2>
-    <div class="row">
-      {% for scholar in site.scholars %}
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-header text-center">
-            <h4 class="mb-0">{{ scholar.year }}</h4>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              {% for winner in scholar.winners %}
-              <li>
-                {% if winner.link != "" %}
-                  <a href="{{ winner.link }}" target="_blank">{{ winner.name }}</a>
-                {% else %}
-                  {{ winner.name }}
-                {% endif %}
-                {% if winner.affiliation != "" %}
-                  ({{ winner.affiliation }})
-                {% endif %}
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+    <section id="rein-otsason">
+      <h2>Rein Otsason</h2>
+      <p>Rein Otsason (1931–2004) oli Eesti majandusteadlane, Eesti Panga esimene president ja Coop Panga asutaja. Tema mälestuseks loodi fond Eesti noorte talentide toetamiseks.</p>
+    </section>
 
-<!-- Kontakt Section -->
-<section id="kontakt" class="py-5">
-  <div class="container">
+    <section id="stipendiaadid">
+      <h2>Stipendiaadid</h2>
+      {% for scholar in site.scholars reversed %}
+      <div class="year">
