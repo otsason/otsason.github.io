@@ -96,14 +96,14 @@
 							<li><a href="#rein-otsason">Rein Otsason</a></li>
               						{% unless site.competition_active %}
 								<li><a href="#toeta">Toeta</a></li>
-              						{% endif %}
+              						{% endunless %}
                             				<li><a href="#stipendiaadid">Stipendiaadid</a></li>
 							<li><a href="#kontakt">Kontakt</a></li>
 							
 							<!-- HEADER ACTION BUTTON -->
               						{% if site.competition_active %}
 								<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>
-              						{% else %}
+              						{% elsif %}
 								<li class="header-action-button"><a href="#toeta" class="btn btn-primary">Toeta!</a></li>
               						{% endif %}
 
