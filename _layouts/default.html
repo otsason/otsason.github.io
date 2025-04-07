@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="Rein Otsasoni Fond - stipendiumid ja toetusprojektid">
+  <!-- Bootstrap & FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#hero">{{ site.title }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Fond</a></li>
+          {% if site.competition_active %}
+          <li class="nav-item"><a class="nav-link" href="#konkurss">Stipendium</a></li>
+          {% endif %}
+          <li class="nav-item"><a class="nav-link" href="#rein-otsason">Rein Otsason</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stipendiaadid">Stipendiaadid</a></li>
+          <li class="nav-item"><a class="nav-link" href="#toeta">Toeta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#toeta">Toeta!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-5">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer bg-dark text-light py-4">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="https://www.facebook.com/otsason.org/" target="_blank" class="text-light mx-2">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </div>
+      <div>&copy; {{ site.time | date: "%Y" }} SA Rein Otsasoni Fond</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
