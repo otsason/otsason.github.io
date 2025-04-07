@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!-- Drew - A Multipurpose Landing Page Template, designed by David Rozando (http://design.davidrozando.com) -->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="et"> <!--<![endif]-->
+
+	<head>
+        
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- BASIC INFO -->
+		<title>Rein Otsasoni Fond | Rein Otsason Foundation</title>
+		<meta name="keywords" content="rein otsason, stipendium">
+		<meta name="description" content="Rein Otsasoni Fond - stipendiumid ja toetusprojektid">
+
+		<!-- FAVICONS -->
+		<link rel="icon" href="images/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+
+        <!-- OG -->
+        <meta property="og:site_name" content="Rein Otsasoni Fond" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://otsason.org/images/contents/reinotsason_sh.jpg" />
+        
+		<!-- CSS
+		================================= -->
+
+		<!-- GOOGLE FONTS -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+
+		<!-- LIBRARIES CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+
+		<!-- SPECIFIC CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- COLORS -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/pink.css"> -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/red.css"> -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/orange.css"> -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/yellow.css"> -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/green.css"> -->
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/turquoise.css"> -->
+		<link id="color-css" rel="stylesheet" href="css/colors/blue.css">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-3695400-3', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+	</head>
+
+	<body class="enable-animations">
+
+		<div id="document" class="document">
+
+			<!-- HEADER
+			================================= -->
+			<header id="header" class="header-section section section-dark navbar navbar-default navbar-fixed-top">
+
+				<div class="container-fluid">
+
+					<div class="navbar-header navbar-left">
+
+						<!-- RESPONSIVE MENU BUTTON -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- HEADER LOGO
+						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
+							<img src="images/logos/white-header-logo.png" srcset="images/logos/white-header-logo@2x.png 2x" alt="Rein Otsasoni Fond">
+						</a> -->
+
+					</div>
+
+					<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
+						
+						<!-- NAVIGATION LINKS -->
+						<ul id="header-nav" class="nav navbar-nav">
+							
+							<li><a href="#hero" class="hidden">Top</a></li>
+
+							<li><a href="#about">Fond</a></li>
+              {% if site.competition_active %}
+							  <li><a href="#konkurss">Stipendium 2024</a></li>
+              {% endif %}
+							<li><a href="#rein-otsason">Rein Otsason</a></li>
+							<!-- ###kommenteeri järgmine rida välja kui konkurssi ei käi -->
+							<!-- <li><a href="#toeta">Toeta</a></li> -->
+                            				<li><a href="#stipendiaadid">Stipendiaadid</a></li>
+							<li><a href="#kontakt">Kontakt</a></li>
+							
+							<!-- HEADER ACTION BUTTON -->
+							<!-- ###vaheta need -->
+							<!--<li class="header-action-button"><a href="#konkurss" class="btn btn-primary">Kandideeri stipendiumile</a></li>-->
+                            				<li class="header-action-button"><a href="#toeta" class="btn btn-primary">Toeta!</a></li>
+
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</header>
+
+
+			<!-- DESCRIPTION
+			================================= -->
+			<section id="about" class="about-section section hero-section">
+
+				<div class="container">
+
+					<h2 class="section-heading text-center">Rein Otsasoni Fond</h2>
+
+					<div class="about-row row">
+
+						<!-- DESCRIPTION IMAGE -->
+						<div class="about-image col-md-6" data-animation="fadeIn">
+							<img src="images/contents/reinotsason.jpg" alt="Description Image">
+						</div>
+
+						<!-- DESCRIPTION TEXT -->
+						<div class="about-text col-md-6">
+							<p class="lead">Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on toetada Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid.</p>
+
+							<ul class="icon-list">
+								<li>
+									<span class="icon-list-icon fa fa-graduation-cap" data-animation="bounceIn"></span>
+									<h4 class="icon-list-title">Stipendiumifond</h4>
+									<p>Sihtasutuse poolt väljaantavad stipendiumid on ette nähtud magistri- või doktoriõppes rahanduse või majandusega seotud erialadel õppivatele üliõpilastele.</p>
+								</li>
+<!--								<li>
+									<span class="icon-list-icon fa fa-heart-o" data-animation="bounceIn"></span>
+									<h4 class="icon-list-title">Toetusfond</h4>
+									<p>Sihtasutuse poolt väljaantavad toetused on ette nähtud heategevusega seotud ürituste ja programmide läbiviimiseks, sealhulgas Eesti lasterikaste perede olukorra parandamiseks.</p>
+								</li>-->
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- ###kommenteeri välja/sisse kogu sektsioon -->
+			<!-- KONKURSS
+			================================= 
+			<section id="konkurss" class="headline-section section-dark section">
+
+				<div class="container">
+
+					<h2 class="section-heading text-center">Stipendiumikonkurss 2024</h2>
+
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+
+							<p class="lead">
+Rein Otsasoni Fond kuulutab välja konkursi kuni kolme 2000 euro suuruse stipendiumi väljaandmiseks.</p>
+
+                            <p>
+Stipendiumile saavad kandideerida Eestis või välismaal tegutsevates kõrgkoolides magistri- või doktoriõppes rahanduse (k.a. finantstehnoloogia) või majanduse erialal õppivad ja teadustööd tegevad Eesti Vabariigi kodanikud.</p>
+
+                            <p>
+Taotlemiseks palume <strong>15. maiks 2024</strong> täita <a href="https://forms.gle/RCwBPHhFW1EzPCzx8" target="_blank">taotlusvorm</a> ning laadida üles:
+<ul class="nice-list">
+    <li>soovituskirjad (töö juhendajalt ja vähemalt ühelt doktorikraadi omavalt õppejõult/teadlaselt);</li>
+    <li>õppeasutuse kinnitus õpingute seisu kohta (õpingutulemuste väljatrükk);</li>
+    <li>koopia senist haridustaset tõendavast dokumendist (diplomi koopia).</li>
+</ul>
+
+                            <p>
+Üleslaetavad dokumendid peavad olema doc, docx, rtf, pdf, bdoc või asice vormingus, originaaldokumendid skaneeritult, eesti või inglise keeles.
+							</p>
+
+                            <p>
+Stipendiaadid kuulutatakse välja Rein Otsasoni sünniaastapäeval, 24. mail 2024.
+							</p>
+
+						</div>
+					</div>
+
+                    
+				</div>
+
+			</section>-->
+
+
+            
+			<!-- REIN OTSASON
+			================================= -->
+			<section id="rein-otsason" class="two-cols-description-section section-accent section">
+
+				<div class="container-fluid two-cols-description-row">
+
+					<!-- TWO COLS DESCRIPTION TEXT -->
+					<div class="two-cols-description-text" data-animation="fadeInLeft">
+
+						<div class="two-cols-description-text-inner">
+
+							<h2 class="section-heading text-left">Rein Otsason</h2>
+
+							<p>Rein Otsason (24. mai 1931 Tartu – 30. oktoober 2004 Tallinn) oli Eesti majandusteadlane ja pankur, üks 1992. aasta rahareformi peamisi ettevalmistajaid. Ta oli Eesti Vabariigi taasiseseisvumise järgse Eesti Panga esimene president ning Eesti Krediidipanga (tänane Coop Pank) asutaja ja president.</p>
+
+                            <p>Rein Otsasoni Fond on 24. mail 2006 asutatud sihtasutus, mille eesmärgiks on hoida Rein Otsasoni mälestust arendades heategevust ning toetades Eesti üliõpilaste ja noorteadlaste õpinguid ja teaduslikke uuringuid. Fond asutati Eesti Krediidipanga ning Rein Otsasoni perekonna ja kolleegide poolt.</p>
+
+						</div>
+
+					</div>
+
+					<!-- TWO COLS DESCRIPTION IMAGE -->
+					<div class="two-cols-description-image" data-animation="fadeInRight">
+						<img src="images/contents/reinotsason_sh2.jpg" alt="">
+					</div>
+
+				</div>
+
+			</section>
+
+            
+			<!-- TOETA
+			================================= -->
+			<section id="toeta" class="headline-section section-white section">
+
+				<div class="container">
+
+					<h2 class="section-heading text-center">Toeta</h2>
+
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+
+							<p class="lead">
+Rein Otsasoni Fond annab igal aastal välja kuni kolm stipendiumi Eesti noortele silmapaistvatele majandusüliõpilastele. Fondi tegevust on võimalik rahaliselt toetada.
+                            </p>
+                                
+
+<p>
+    
+Pangarekvisiidid:
+<ul class="nice-list">
+    <li>SA Rein Otsasoni Fond</li>
+    <li>Narva mnt 4, Tallinn, Estonia</li>
+    <li>Reg nr: 90010344</li>
+    <li>Pangakonto: <b>EE344204278605122302</b> (Coop Pank AS)</li>
+    <li>BIC: EKRDEE22</li>
+</ul>
+                            </p>
+
+                        <p>
+SA Rein Otsasoni Fond kuulub tulumaksusoodustusega ühingute nimekirja alates 1.01.2012. Eesti residendist annetajatel on võimalik vastavalt seadusele annetatud summalt tulumaks tagasi saada. Selleks palume lisada ülekande selgitusse annetaja isikukood.
+</p>
+
+						</div>
+					</div>
+
+                    <br/><br/><br/>
+
+
+					<h2 class="section-heading text-center">Aitäh</h2>
+
+					<div class="row text-center">
+
+                                
+
+<p>
+    <a href="https://www.cooppank.ee/" target="_blank"><img src="images/logos/440px-Coop_Pank_logo.jpg" alt="Coop Pank"></a>
+    <!--<a href="https://www.eestipank.ee/" target="_blank"><img src="images/logos/EP_logo_ikoon_0079BB.svg" width="150" alt="Eesti Pank"></a>-->
+</p>
+						
+
+					</div>
+
+                    
+				</div>
+            
+			</section>
+
+            
+			<!-- STIPENDIAADID
+			================================= -->
+			<section id="stipendiaadid" class="benefits-section section-gray section">
+
+				<div class="container">
+
+					<h2 class="section-heading text-center">Stipendiaadid</h2>
+
+					<div class="benefits-row row">
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2007</h4>
+								<p class="benefit-description">
+                                    <a href="https://ee.linkedin.com/in/jelena-hartsenko-b9415334" target="_blank">Jelena Hartšenko</a> (TTÜ)<br/>
+                                    <a href="https://ee.linkedin.com/in/mark-kanchukov-b9ab95a" target="_blank">Mark Kantšukov</a> (Tartu Ülikool)<br/>
+								    <a href="https://et.wikipedia.org/wiki/Aaro_Hazak" target="_blank">Aaro Hazak</a> (TTÜ)
+                                </p>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2008</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/triinkask/" target="_blank">Triin Kask</a> (Tartu Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/marili-m%C3%A4nnik-b7461611/" target="_blank">Marili Männik</a> (Estonian Business School)<br/>
+                                    <b>Margit Vaaks</b> (Tallinna Tehnikaülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-md hidden-lg clear"></div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2009</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/teele-alas-b0801960/" target="_blank">Teele Alas</a> (Amsterdami Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/madis-reinum%C3%A4gi-01481452/" target="_blank">Madis Reinumägi</a> (Reykjaviki Ülikool)<br/>
+                                    <a href="https://www.etis.ee/CV/Oliver_Lukason/est" target="_blank">Oliver Lukason</a> (Tartu Ülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-sm clear"></div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2010</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/avelepik/" target="_blank">Ave Lepik</a> (Tartu Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/madlipindmaa/" target="_blank">Madli Pindmaa</a> (Copenhagen Business School)<br/>
+                                    <b>Eeva Mauring</b> (Helsingi Ülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-md hidden-lg clear"></div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2011</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/aleksei-netsunajev-804aa0175/" target="_blank">Aleksei Netšunajev</a> (European University Institute)<br/>
+                                    <a href="https://www.linkedin.com/in/indrek-seppo-a1896220/" target="_blank">Indrek Seppo</a> (Tartu Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/andres-kuusik-29527418/" target="_blank">Andres Kuusik</a> (Tartu Ülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2012</h4>
+								<p class="benefit-description">
+                                    <b>Priit Jeenas</b> (Barcelona Graduate School of Economics)<br/>
+                                    <b>Evelin Viilmann</b> (Tallinna Tehnikaülikool)<br/>
+                                    <b>Kärt Rõigas</b> (Tartu Ülikool)
+                                </p>
+							</div>
+						</div>
+
+                		<div class="clear"></div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2013</h4>
+								<p class="benefit-description">
+                                    <a href="https://ee.linkedin.com/in/aleksei-fimaier-25b69025" target="_blank">Aleksei Fimaier</a> (TTÜ)<br/>
+                                    <a href="https://www.linkedin.com/in/anne-p%C3%B5der-4aa76894/" target="_blank">Anne Põder</a> (Eesti Maaülikool)<br/>
+                                    <a href="https://ee.linkedin.com/in/enelikindsiko" target="_blank">Eneli Kindsiko</a> (Tartu Ülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2014</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/karoline-j-a68a2b48/" target="_blank">Karoline Jostov</a> (Bocconi Ülikool/SSE)<br/>
+                                    <a href="https://uk.linkedin.com/in/sten-sonts-55283737" target="_blank">Sten Sonts</a> (HEC Paris)<br/>
+                                    <a href="https://www.linkedin.com/in/j%C3%BCrgen-kaevats-119b1041/" target="_blank">Jürgen Kaevats</a> (SSE)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-md hidden-lg clear"></div>
+
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2015</h4>
+								<p class="benefit-description">
+                                    <a href="https://ee.linkedin.com/in/martin-lumiste-558748ab" target="_blank">Martin Lumiste</a> (Toulouse)<br/>
+                                    <a href="https://uk.linkedin.com/in/sven-sabas-90613066" target="_blank">Sven Sabas</a> (LSE)<br/>
+                                    <b>Heili Hein</b> (TTÜ)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-sm clear"></div>
+
+						<!-- 2016 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2016</h4>
+								<p class="benefit-description">
+                                    <a href="https://cn.linkedin.com/in/sander-veges-770a899a" target="_blank">Sander Veges</a> (Fudan University)<br/>
+                                    <a href="https://ee.linkedin.com/in/renee-pesor-42874343" target="_blank">Renee Pesor</a> (EBS)
+                                    <br/>
+                                    <b>Jelena Komendantova</b> (TTÜ)
+                                </p>
+							</div>
+						</div>
+
+						<!-- 2017 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2017</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/janely-p%C3%B5llum%C3%A4gi-67b27483/" target="_blank">Janely Põllumägi</a> (TTÜ)<br/>
+                                    <a href="https://www.linkedin.com/in/laura-saar-544379b7/" target="_blank">Laura Saar</a> (University of Strathclyde)<br/>
+                                    <a href="https://www.linkedin.com/in/marko-virkebau-3466651b/" target="_blank">Marko Virkebau</a> (TTÜ)
+                                </p>
+							</div>
+						</div>
+
+						<!-- 2018 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2018</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/kristjanliivamagi/" target="_blank">Kristjan Liivamägi</a> (TTÜ)<br/>
+                                    <a href="https://www.linkedin.com/in/triinu-tapver-b53030153/" target="_blank">Triinu Tapver</a> (TTÜ)<br/>
+                                    <a href="https://www.linkedin.com/in/eric-keskpaik-095738b8/" target="_blank">Eric Keskpaik</a> (Tartu Ülikool)
+                                </p>
+							</div>
+						</div>
+
+						<div class="hidden-sm clear"></div>
+
+                        <!-- 2019 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2019</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/indrek-viires-8512361a4/" target="_blank">Indrek Viires</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/airiin-laanev%C3%A4li-78589239/" target="_blank">Airiin Laaneväli</a> (Tartu Ülikool)<br/>
+                                    <b>Mari-Liis Kukk</b> (TalTech)
+                                </p>
+							</div>
+						</div>
+                        
+						<!-- 2020 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2020</h4>
+								<p class="benefit-description">
+                                    <a href="https://ee.linkedin.com/in/helery-tasane-10068a80" target="_blank">Helery Tasane</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/hanna-stina-sonts-3011a594/" target="_blank">Hanna-Stina Sonts</a> (HEC Paris)<br/><br/>
+                                </p>
+							</div>
+						</div>
+
+                        
+                      				<!-- 2021 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2021</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/katri-urke-651a1b171/" target="_blank">Katri Urke</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/pauline-kommer-bb9924213/" target="_blank">Pauline Kommer</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/asso-kasuk-52b068152/" target="_blank">Asso Kasuk</a> (Tartu Ülikool)
+                                				</p>
+							</div>
+						</div>
+		
+						<div class="hidden-sm clear"></div>
+
+                      				<!-- 2022 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2022</h4>
+								<p class="benefit-description">
+                                    <b>Laura Helena Kivi</b> (Tartu Ülikool)<br/>
+                                    <b>Miina Hõbenael</b> (TalTech)<br/>
+                                    <b>Vladislav Fjodorov</b> (TalTech)
+                                				</p>
+							</div>
+						</div>
+		
+                      				<!-- 2023 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2023</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/kristjan-pulk-aa2884240/" target="_blank">Kristjan Pulk</a> (Tartu Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/gerda-kirpson-9b8a9712a/" target="_blank">Gerda Kirpson</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/sofia-kruusalu-6a466a1b5/" target="_blank">Sofia Kruusalu</a> (TalTech)
+                                				</p>
+							</div>
+						</div>
+		
+                      				<!-- 2024 -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2024</h4>
+								<p class="benefit-description">
+                                    <a href="https://www.linkedin.com/in/mathias-juust-618615143/" target="_blank">Mathias Juust</a> (Tartu Ülikool)<br/>
+                                    <a href="https://www.linkedin.com/in/ann-merit-toiger-b0b5a822b/" target="_blank">Ann Merit Toiger</a> (TalTech)<br/>
+                                    <a href="https://www.linkedin.com/in/liina-rebane-159985267/" target="_blank">Liina Rebane</a> (TalTech)
+                                				</p>
+							</div>
+						</div>
+		
+
+						<!-- KANDIDEERI 
+						###kopeeri eelmine ruut ja lisa uued nimed -->
+						<div class="col-sm-6 col-md-4">
+							<div class="benefit">
+								<h4 class="benefit-title">2025</h4>
+								<!-- ###kommenteeri välja ja vaheta siin sisu -->
+								<p class="benefit-description"><i>Uus konkurss kuulutatakse välja aprillis 2025</i><br/><br/><br/></p>
+                                <!--<p class="benefit-description">
+                                    <a href="#konkurss" class="btn btn-primary">Kandideeri</a><br/><br/>
+                                </p>-->
+							</div>
+						</div>
+
+
+                        
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- CONTACT + MAPS
+			================================= -->
+			<section id="kontakt" class="contact-maps-section section-accent section">
+
+				<div class="section-background">
+
+					<!-- MAPS BACKGROUND -->
+					<div class="section-background-maps">
+						<div id="gmap"></div>
+				
+						<!-- GOGGLE MAPS CONFIGURATION -->
+						<!-- ref: http://maplacejs.com/ -->
+                        <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+						<script>
+						var gmap_options = {
+							generate_controls : false,
+							locations : [{
+								lat : 59.437164,
+								lon : 24.759974,
+								animation : google.maps.Animation.DROP,
+								html : "Rein Otsasoni Fond",
+								clickable : false,
+							}],
+							map_options : {
+								scrollwheel : false,
+								mapTypeControl : false,
+								streetViewControl : false,
+								zoomControlOptions : {
+									style : google.maps.ZoomControlStyle.SMALL,
+								},
+								zoom : 15,
+								set_center : [ 59.437164, 24.769974 ], // adjust the "lon" attribute of your first location
+							},
+							styles : {
+								// source: https://snazzymaps.com/style/132/light-gray
+								'custom' : [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+							},
+						};
+						</script>-->
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="contact-maps-row row">
+						<div class="col-md-7 col-md-offset-5">
+
+							<div class="contact-maps-box" data-animation="fadeIn">
+
+								<h2 class="section-heading">Kontaktid</h2>
+
+								<div class="row">
+									<address class="col-sm-6">
+										<strong>SA Rein Otsasoni Fond</strong>
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-building"></i>Narva mnt 4<br>Tallinn, Estonia</li>
+											<li><i class="fa-li fa fa-at"></i>E-mail: <a href="mailto:info@otsason.org" target="_blank">info@otsason.org</a></li>
+											<li><i class="fa-li fa fa-phone"></i>Telefon: +372 5096926</li>
+										</ul>										
+									</address>
+									<address class="col-sm-6">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-building-o"></i>Reg nr: 90010344</li>
+											<li><i class="fa-li fa fa-euro"></i>IBAN: EE344204278605122302</li>
+											<li><i class="fa-li fa fa-bank"></i>BIC: EKRDEE22</li>
+										</ul>										
+									</address>
+								</div>
+
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+
+			<!-- FOOTER
+			================================= -->
+			<section id="footer" class="footer-section section">
+
+				<div class="container">
+					<div class="footer-socmed">
+						<a href="https://www.facebook.com/otsason.org/" target="_blank"><span class="fa fa-facebook-square"></span></a>
+					</div>
+
+					<div class="footer-copyright">
+						&copy; {{ site.time | date: "%Y" }} SA Rein Otsasoni Fond
+					</div>
+
+				</div>
+
+			</section>
+		
+		</div>
+
+		<!-- LIBRARIES JS
+		================================= -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/respimage.min.js"></script>
+		<script src="js/jpreloader.min.js"></script>
+		<script src="js/smoothscroll.min.js"></script>
+		<script src="js/jquery.nav.min.js"></script>
+		<script src="js/jquery.inview.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/maplace-0.1.3.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+
+		<!-- MAIN SCRIPT
+		================================= -->
+		<script src="js/script.js"></script>
+
+	</body>
+
+</html>
