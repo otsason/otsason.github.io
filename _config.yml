@@ -1,4 +1,4 @@
-competition_active: true  # true kui konkurss käib, false kui on läbi saanud
+competition_active: false  # true kui konkurss käib, false kui on läbi saanud
 competition_deadline: "18. maiks"
 competition_prize: "kuni kahe 3000 euro suuruse stipendiumi"
 competition_form: "https://forms.gle/k5jmpDiYJED3Yswt6"
@@ -198,3 +198,13 @@ scholars:
       - name: "Liina Rebane"
         affiliation: "TalTech"
         link: "https://www.linkedin.com/in/liina-rebane-159985267/"
+  - year: 2025
+    winners:
+      - name: "Merilin Martinson"
+        affiliation: "University College London"
+        link: "https://www.linkedin.com/in/merilin-martinson/"
+      - name: "Marit Priisalu"
+        affiliation: "TalTech"
+        link: "https://ee.linkedin.com/in/marit-p-7892282b2/"
+        
+        
