@@ -1,7 +1,7 @@
 competition_active: false  # true kui konkurss käib, false kui on läbi saanud
-competition_deadline: "18. maiks"
+competition_deadline: "11. maiks"
 competition_prize: "kuni kahe 3000 euro suuruse stipendiumi"
-competition_form: "https://forms.gle/k5jmpDiYJED3Yswt6"
+competition_form: "https://forms.gle/3HejbxkWLhdpGyF57"
 scholars:
   - year: 2007
     winners:
